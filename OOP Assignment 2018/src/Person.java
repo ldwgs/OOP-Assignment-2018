@@ -3,5 +3,5 @@ public class Person {
 	public String name;
 	public String gender;
 	public String email;
-	public int contactNumber;
+	public String contactNumber;
 }

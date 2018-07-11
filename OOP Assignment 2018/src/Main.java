@@ -1,8 +1,5 @@
-import java.sql.*;
-
 public class Main {
-	
-	public static void main(String[] args) throws SQLException {
-            ConnectServer conn = new ConnectServer();
-	}	
+	public static void main(String[] args) {
+            new MainMenu().setVisible(true); // Opens the MainMenu JForm
+        }	
 }

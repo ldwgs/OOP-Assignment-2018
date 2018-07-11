@@ -1,13 +1,35 @@
-public class Manager extends Person{
+import java.io.Serializable;
+
+public class Manager extends Person implements Serializable{
 	public Manager() {
 		
 	}
 	
-	public Manager(int ID, String name, String gender, String email, int contactNumber) {
-		ID = super.ID;
-		name = super.name;
-		gender = super.gender;
-		email = super.email;
-		contactNumber = super.contactNumber;
+	public Manager(int ID, String name, String gender, String email, String contactNumber) {
+		super.ID = ID;
+		super.name = name;
+		super.gender = gender;
+		super.email = email;
+		super.contactNumber = contactNumber;
 	}
+        
+        public int getID() {
+            return ID;
+        }
+        
+        public String getName() {
+            return name;
+        }
+        
+        public String getGender() {
+            return gender;
+        }
+        
+        public String getEmail() {
+            return email;
+        }
+        
+        public String contactNumber() {
+            return contactNumber;
+        }
 }
